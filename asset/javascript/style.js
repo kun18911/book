@@ -55,7 +55,7 @@ function click1() {
            
             }}
             if (i < arrayText.length) {
-                setTimeout(function() {startRead()},200)
+                setTimeout(function() {startRead()},140)
             }
       
        
