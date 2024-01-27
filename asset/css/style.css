@@ -1,7 +1,8 @@
 #app {
     width: 1080px;
     height: 1940px;
-    background-color: #09092d96;
+    background-color: #000000;
+    /* background-color: #09092d96; */
     position: relative;
     margin-top: 20px;
     
@@ -127,4 +128,27 @@
     font-weight: bold !important;
   
    
+}
+.daDoc {
+    font-size: 35px;
+    top: calc(33% + 12px);
+    left: 42%;
+    font-weight: bold !important;
+    line-height: 63px;
+    height: 63px;
+    color: #4aa09d;
+    text-align: center;
+    background-color: #005824;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 5px solid #18657b;
+    position: absolute;
+    transform: translateX(-50%);
+    min-width: 319px;
+}
+.tu1 {
+    color: #4d18e7 !important;
+}
+.tu2 {
+    color: #3b89e8e6 !important;
 }
