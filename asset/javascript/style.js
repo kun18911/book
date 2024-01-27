@@ -202,62 +202,22 @@ var dal = true
 
 var i = 0
 var id = 0
+var adaDoc = Number(document.querySelector(".daDoc1").innerHTML)
+var bdaDoc = Number(document.querySelector(".daDoc1").innerHTML)
     function click1() {
+        document.querySelector(".daDoc").classList.remove("nonee")
         buttonRead.classList.add("nonee")
         inputRead.classList.add("nonee")
         document.querySelector(".stop1").classList.remove("nonee")
         var valueInput = document.querySelector(".a").value
         var arrayText = valueInput.split(" ")
+        document.querySelector(".daDoc2").innerHTML = arrayText.length
         console.log(arrayText)
         console.log()
-    
-    
-        // startRead()
-        // function startRead() {
-        //     if(dal == true) {
-        //         dal = false
-                
-               
-              
-        //         document.querySelector(".stop1").addEventListener("click", click2)
-        //         function click2() {
-        //             document.querySelector(".stop1").classList.add("clickStop")
-                   
-        //             setTimeout(function () {
-        //                 document.querySelector(".stop1").classList.add("nonee")
-        //                 document.querySelector(".stop1").classList.remove("clickStop")
-        //                 document.querySelector(".stop1").removeEventListener("click", click2)
-        //                 document.querySelector(".stop2").classList.remove("nonee")
-        //                 dal = true
-        //                 clearInterval(id)
-                        
-    
-        //                 document.querySelector(".stop2").addEventListener("click", click3)
-        //         function click3() {
-                   
-                    
-        //             document.querySelector(".stop2").classList.add("clickCon")
-    
-                   
-                    
-        //             document.querySelector(".stop2").removeEventListener("click", click3)
-        //             document.querySelector(".stop1").classList.remove("nonee")
-        //             document.querySelector(".stop2").classList.add("nonee")
-        // startRead()
-                    
-                    
-                
-        //     }
-        //             },400)
-    
-                    
-        //         }
-               
-        //         }}
-             
-          
+
         var mybae = function() { 
             console.log(i, arrayText[i])
+            document.querySelector(".daDoc1").innerHTML = i + 1
             document.getElementById("app2").innerHTML = arrayText[i]
             i++
             if (i == arrayText.length) {clearInterval(id)
@@ -267,7 +227,13 @@ var id = 0
                     document.querySelector(".stop1").classList.add("nonee")  
                     document.querySelector(".a").value = ""
                     i = 0
-                },800)
+
+                    document.querySelector(".daDoc1").innerHTML = 0
+                    document.querySelector(".daDoc2").innerHTML = 0
+
+                    document.querySelector(".daDoc").classList.add("nonee")
+
+                },1200)
             }
         }
                 if (i < arrayText.length) {
