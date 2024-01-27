@@ -19,7 +19,7 @@
     color: #537cde;
     line-height: 200px;
     text-align: center;
-    font-size: 72px;
+    font-size: 115px;
     top: 39%;
     left: 50%;
     width: 500px;
@@ -61,6 +61,35 @@
     position: absolute;
     transform: translateX(-50%);
 }
+.d3 {
+    font-size: 35px;
+    top: 62%;
+    
+    width: 300px;
+    font-weight: bold !important;
+    line-height: 87px;
+    height: 86px;
+    color: #76c8c5;
+    text-align: center;
+    background-color: #1056ff;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 9px solid #4d7884;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.buttonRight {
+    top: 53%;
+    width: 146px;
+    right: 75px !important;
+}
+.buttonLeft {
+    top: 53%;
+    width: 146px;
+    left: 235px !important;
+}
+
 
 .nonee {
     display: none;
